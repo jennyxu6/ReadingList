@@ -24,7 +24,10 @@
         return {
             restrict: 'E',
             templateUrl: '/app/partials/book-cover.html',
-            replace: true
+            replace: true,
+            scope: {
+                book: '='
+            }
         }
     })
     
@@ -44,7 +47,6 @@
             },
             controllerAs: "reviewFormCtrl",
             scope: {
-                books: '=',
                 genres: '='
             }
         };
